@@ -5,20 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/e23101e17c.js" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
 </head>
-<body>
+<body class="h-screen flex flex-col lg:justify-between bg-[url('./images/bg-mobile.svg')] bg-no-repeat bg-contain sm:bg-cover bg-[var(--Violet)] lg:bg-[url('./images/bg-desktop.svg')]">
+  <header class="px-10 lg:px-20 pt-10">
+    <img src="./images/logo.svg" alt="Logotipo escrito Huddle" class="w-36 lg:w-40">
+  </header>
+  <main class="flex flex-col lg:flex-row items-center lg:items-left p-10 lg:p-20">
+    <img src="./images/illustration-mockups.svg" alt="Uma imagem de um website desktop sobreposto por outra imagem do mesmo website no mobile" class="mb-10 lg:mb-0 lg:w-1/2 lg:mr-10">
 
-  Build The Community Your Fans Will Love
+    <div class="flex flex-col items-center lg:items-start">
+      <h1 class="text-2xl text-center lg:text-left font-bold text-white">Build The Community Your Fans Will Love</h1>
+    
+      <p class="text-center lg:text-left text-white text-base font-light my-5">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+    
+      <button class="w-52 bg-white text-center text-sm text-[var(--Violet)] rounded-full px-4 py-3 lg:py-4 shadow-inner hover:bg-[var(--Soft-Magenta)] hover:text-white">Register</button>
+    </div>
+  </main>
+  <footer class="flex flex-row items-center justify-center lg:justify-end lg:p-10 lg:px-20">
+    <a href="" class="border border-solid hover:border-[var(--Soft-Magenta)] rounded-full w-8 h-8 flex items-center justify-center mx-2 text-white hover:text-[var(--Soft-Magenta)]">
+      <i class="fa-brands fa-facebook-f" id="social-media-icon"></i>
+    </a>
+    <a href="" class="border border-solid hover:border-[var(--Soft-Magenta)] rounded-full w-8 h-8 flex items-center justify-center mx-2 text-white hover:text-[var(--Soft-Magenta)]">
+      <i class="fa-brands fa-twitter" id="social-media-icon"></i>
+    </a>
+    <a href="" class="border border-solid hover:border-[var(--Soft-Magenta)] rounded-full w-8 h-8 flex items-center justify-center mx-2 text-white hover:text-[var(--Soft-Magenta)]">
+      <i class="fa-brands fa-instagram" id="social-media-icon"></i>
+    </a>
+  </footer>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
- 
 </body>
 </html>
